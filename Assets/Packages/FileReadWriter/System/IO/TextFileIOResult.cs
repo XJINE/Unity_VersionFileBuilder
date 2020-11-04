@@ -2,13 +2,13 @@
 {
     public class TextFileIOResult
     {
-        public readonly bool   isSuccess;
+        public readonly bool   success;
         public readonly string text;
 
-        public TextFileIOResult(bool isSuccess, string text)
+        public TextFileIOResult(bool success, string text)
         {
-            this.isSuccess = isSuccess;
-            this.text      = text;
+            this.success = success;
+            this.text    = text;
         }
     }
 }

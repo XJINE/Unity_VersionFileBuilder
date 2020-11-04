@@ -27,9 +27,14 @@ public class VersionFileBuilder : IPreprocessBuildWithReport, IPostprocessBuildW
 
         string filePath = Path.GetDirectoryName(buildReport.summary.outputPath) + "\\" + FileName;
 
+        if (!File.Exists(filePath))
+        {
+            return;
+        }
+
         TextFileIOResult result = TextFileReadWriter.ReadFromFile(filePath);
 
-        if (result.isSuccess)
+        if (result.success)
         {
             Version previousVersion = new Version(result.text);
             Version buildVersion    = new Version(PlayerSettings.bundleVersion);
@@ -65,7 +70,7 @@ public class VersionFileBuilder : IPreprocessBuildWithReport, IPostprocessBuildW
 
         TextFileIOResult result = TextFileReadWriter.WriteToFile(filePath, version);
 
-        if (!result.isSuccess)
+        if (!result.success)
         {
             EditorUtility.DisplayDialog(typeof(VersionFileBuilder).Name,
                                         "Faild to write Version.txt", "OK");
