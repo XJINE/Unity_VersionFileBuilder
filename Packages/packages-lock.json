@@ -1,11 +1,24 @@
 {
   "dependencies": {
     "com.unity.ide.visualstudio": {
-      "version": "2.0.2",
+      "version": "2.0.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
+    },
+    "packagemanagersample": {
+      "version": "https://github.com/XJINE/Unity_PackageManagerSample.git?path=/Packages/PackageManagerSample",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8cc9dfcff4da89bc81e036a2945bfb4fbc306e50"
+    },
+    "xjine.versionfilebuilder": {
+      "version": "file:VersionFileBuilder",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

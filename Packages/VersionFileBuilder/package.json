@@ -1,0 +1,12 @@
+{
+  "name": "xjine.versionfilebuilder",
+  "displayName": "Version File Builder",
+  "version": "1.0.0",
+  "unity": "2020.1",
+  "description": "This generate a version.txt file when your project will builds.",
+  "author": {
+    "name": "XJINE"
+  },
+  "type": "library",
+  "hideInEditor": false
+}
