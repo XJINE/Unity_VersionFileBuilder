@@ -2,10 +2,13 @@
   "name": "xjine.versionfilebuilder",
   "displayName": "Version File Builder",
   "version": "1.0.0",
-  "description": "This generate a version.txt file when build. Nothing to do. Just install.",
+  "description": "- Write a Version.txt when the project succeeded in build.\n- Alert and stop building when the existing version is newer than current.\n- Set the version number in ProjectSettings > Player > Version.",
   "author": {
     "name": "XJINE"
   },
   "type": "tool",
-  "hideInEditor": false
+  "hideInEditor": false,
+  "dependencies": {
+    "xjine.textfilereadwriter": "https://github.com/XJINE/Unity_TextFileReadWriter.git?path=/Packages/TextFileReadWriter"
+  }
 }

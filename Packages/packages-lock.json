@@ -7,11 +7,20 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "xjine.textfilereadwriter": {
+      "version": "https://github.com/XJINE/Unity_TextFileReadWriter.git?path=/Packages/TextFileReadWriter",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "3819298f767f87dab3da62829530fbfd03c03a3d"
+    },
     "xjine.versionfilebuilder": {
       "version": "file:VersionFileBuilder",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {}
+      "dependencies": {
+        "xjine.textfilereadwriter": "https://github.com/XJINE/Unity_TextFileReadWriter.git?path=/Packages/TextFileReadWriter"
+      }
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
