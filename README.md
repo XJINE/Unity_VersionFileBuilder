@@ -4,7 +4,8 @@ Write a Version.txt when the project succeeded in build.
 
 ## Import to Your Project
 
-Paste this code into PackageManager > Add package from git URL.
+1. Import dependencies first.
+2. Paste this code into ``PackageManager > Add package from git URL``.
 
 ```
 https://github.com/XJINE/Unity_VersionFileBuilder.git?path=/Packages/VersionFileBuilder
